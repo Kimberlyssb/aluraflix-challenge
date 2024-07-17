@@ -1,0 +1,20 @@
+.section-container{
+    margin-left: 15px;
+}
+
+.titulo-genero{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: #dcdde4;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.generos-container{
+    display: flex;
+    flex-wrap: wrap;
+}

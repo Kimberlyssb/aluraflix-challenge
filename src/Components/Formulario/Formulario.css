@@ -1,0 +1,46 @@
+.titulo-form{
+    font-size: 50px;
+    text-align: center;
+    color: #dcdde4;
+}
+
+.subtitulo-form{
+    font-size: 20px;
+    text-align: center;
+    color: #dcdde4;
+}
+
+.titulo-crear{
+    font-size: 35px;
+    margin: 25px 20px;
+    color: #dcdde4;
+    border-bottom: solid 2px #0f0f12;
+    border-top: solid 2px #0f0f12;
+    padding: 15px 0;
+}
+
+.campo-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button-form-save{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border: solid 1px #dcdde4;
+    border-radius: 10px;
+    margin: 20px 5px 30px 20px;
+    font-weight: bold;
+    color: #dcdde4;
+}
+
+.button-form-save:hover{
+    color: #2271d1;
+    border: solid 1px #2271d1;
+    border-radius: 10px;
+    box-shadow: inset 0em 0em 9px 0px #2271d1;
+    font-weight: bolder;
+    color: #2271d1;
+}

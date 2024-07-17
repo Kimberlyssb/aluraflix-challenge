@@ -1,0 +1,39 @@
+.campo{
+    margin: 24px 0;
+    background-color: black;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #dcdde4;
+}
+
+.campo input{
+    width: 600px;
+    color: #dcdde4;
+    border: solid 2px #0f0f12;
+    background-color: black;
+    border-radius: 10px;
+    padding: 30px 20px;
+    outline-color: #dcdde4;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo-color input{
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
