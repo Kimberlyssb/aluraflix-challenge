@@ -1,6 +1,6 @@
 .campo{
     margin: 24px 0;
-    background-color: black;
+    background-color: #070709;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     width: 600px;
     color: #dcdde4;
     border: solid 2px #0f0f12;
-    background-color: black;
+    background-color: #070709;
     border-radius: 10px;
     padding: 30px 20px;
     outline-color: #dcdde4;

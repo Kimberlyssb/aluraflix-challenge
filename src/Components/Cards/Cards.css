@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    background-color: black;
+    background-color: #070709;
     border: solid 4px;
     border-radius: 15px;
     margin: 15px 8px; 
@@ -53,12 +53,16 @@
     color: #dcdde4;
     width: 130px;
     height: 50px;
-    background-color: black;
-    border: solid 1px black;
+    background-color: #070709;
+    border: solid 1px #070709;
     border-radius: 10px;
     margin-right: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button:hover{
+    color: rgb(56, 54, 54);
 }

@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import NuevoVideo from "./Pages/NuevoVideo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import EditarVideo from "./Components/EditCards";
 
 const cards = [
   {
@@ -178,6 +179,14 @@ function App() {
     setDataCard(nuevaCard);
   };
 
+  const updateVideo = (updatedVideo) => {
+    const updatedCards = dataCard.map((card) => 
+      card.id === updatedVideo.id ? updatedVideo : card
+    );
+    setDataCard(updatedCards);
+  };
+
+  
   return (
     <Router>
       <div className="contenedor-global">
@@ -185,6 +194,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home dataCard={dataCard} deleteVideo={deleteVideo}/>} />
           <Route path="/nuevo_video" element={<NuevoVideo addVideo={addVideo}/>} />
+          <Route path="/editar_video/:id" element={<EditarVideo videos={dataCard} updateVideo={updateVideo} />} />
         </Routes>
         <Footer />
      </div>

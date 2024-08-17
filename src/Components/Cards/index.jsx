@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./Cards.css";
+import { Link } from "react-router-dom";
 
 const Cards = (props) => {
   const { titulo, linkVideo, urlImg, id } = props.dataCards;
@@ -13,14 +14,14 @@ const Cards = (props) => {
   return (
     <>
       <section className="cards" style={colorBorde}>
-        <div className="img-container" >
+        <div className="img-container">
           <a href={linkVideo} target="_blank">
             <img className="img" src={urlImg} style={colorBorde}></img>
           </a>
         </div>
         <h2 className="titulo-card">{titulo.toUpperCase()}</h2>
         <div className="button-cards">
-          <button className="button" onClick={ () => deleteVideo(id)} >
+          <button className="button" onClick={() => deleteVideo(id)}>
             <img
               className="delete-icon"
               src="/public/img/deleteIcon.png"
@@ -29,12 +30,14 @@ const Cards = (props) => {
             BORRAR
           </button>
           <button className="button">
-            <img
-              className="edit-icon"
-              src="/public/img/editIcon.png"
-              alt="edit"
-            />
-            EDITAR
+            <Link to={`/editar_video/${id}`} className="button">
+              <img
+                className="edit-icon"
+                src="/public/img/editIcon.png"
+                alt="edit"
+              />
+              EDITAR
+            </Link>
           </button>
         </div>
       </section>

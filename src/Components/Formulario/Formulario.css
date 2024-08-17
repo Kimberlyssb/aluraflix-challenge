@@ -22,13 +22,13 @@
 .campo-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
+
 
 .button-form-save{
     width: 150px;
     height: 50px;
-    background-color: black;
+    background-color: #070709;
     border: solid 1px #dcdde4;
     border-radius: 10px;
     margin: 20px 5px 30px 20px;
@@ -44,3 +44,31 @@
     font-weight: bolder;
     color: #2271d1;
 }
+
+@media (max-width: 480px) {
+    .titulo-form{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .subtitulo-form{
+        font-size: 15px;
+    }
+
+    .titulo-crear{
+        font-size: 20px;
+    }
+
+    .titulo-lista{
+        margin-left: 15px;
+    }
+
+    .lista-opciones{
+        width: 400px;
+    }
+
+    .campo-input{
+        width: 400px;
+    }
+}
+
