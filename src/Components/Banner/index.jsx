@@ -6,7 +6,7 @@ function Banner() {
       <div className="contenedor-banner">
         <img
           className="banner"
-          src="../public/img/banner-aluraflix.jpg"
+          src="public\img\banner-aluraflix.jpg"
           alt="banner-principal"
         />
         <div className="video-banner">
