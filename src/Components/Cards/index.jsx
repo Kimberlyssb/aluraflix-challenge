@@ -24,7 +24,7 @@ const Cards = (props) => {
           <button className="button" onClick={() => deleteVideo(id)}>
             <img
               className="delete-icon"
-              src="/public/img/deleteIcon.png"
+              src="/img/deleteIcon.png"
               alt="delete"
             />
             BORRAR
@@ -33,7 +33,7 @@ const Cards = (props) => {
             <Link to={`/editar_video/${id}`} className="button">
               <img
                 className="edit-icon"
-                src="/public/img/editIcon.png"
+                src="/img/editIcon.png"
                 alt="edit"
               />
               EDITAR
